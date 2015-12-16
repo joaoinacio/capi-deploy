@@ -1,12 +1,11 @@
 # Capistrano deploy config for ezplatform
 
-# import rsync config
-import 'deploy/rsync.rb'
-
 #
 #  capistrano/symfony
 #  ==================
 
+# Default symfony environment
+set :symfony_env,           "prod"
 
 # Controllers to clear
 #set :controllers_to_clear,  ["app_*.php"]
