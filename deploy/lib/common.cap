@@ -1,0 +1,6 @@
+
+namespace :ezp do
+    task :'cache-clear' do
+        invoke 'symfony:console', 'cache:clear'
+    end
+end

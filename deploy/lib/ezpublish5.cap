@@ -1,0 +1,15 @@
+#
+
+namespace :ezpublish5 do
+
+    # ezplatform-solr
+    task :updatesearchindex_ezplatform do
+        invoke 'symfony:console', 'ezplatform:solr_create_index'
+    end
+
+    # legacy script
+    task :updatesearchindex_ls do
+        invoke 'symfony:console', 'ezpublish:legacy:script', 'bin/php/updatesearchindex.php --allow-root-user', :web
+    end
+end
+

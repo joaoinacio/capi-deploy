@@ -1,0 +1,11 @@
+# ezplatform tasks
+
+namespace :ezplatform do
+
+    # ezplatform-solr-bundle
+    task :updatesearchindex_solr do
+        invoke 'symfony:console', 'ezplatform:solr_create_index'
+    end
+
+end
+

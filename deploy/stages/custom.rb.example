@@ -1,0 +1,19 @@
+# example file for custom stage environment
+
+# load defaults
+load File.expand_path("../default.rb", __FILE__)
+
+#set :application,           "myapp"
+#set :domain,                "server.local"
+
+#set :repo_url,              "git@github.com:joaoinacio/capi-deploy.git
+
+#ask :branch,                "master"
+#set :keep_releases,         3
+#set :symfony_env,           "dev"
+
+#set :composer_install_flags, '--no-interaction'
+
+#server 'server.local',      user: 'jcinacio', roles: ['web','app','db'], ssh_options: { user: 'jcinacio' }
+#set :deploy_to,             "/var/www/" + fetch(:application)
+
