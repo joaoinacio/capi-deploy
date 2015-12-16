@@ -1,7 +1,7 @@
 
 
 ### Deployment automation for eZ Platform / eZ Publish / Symfony web apps.
-
+t
 This is a collection of configuration options and tasks to automate the deployment process(es) of ezplatform/ezpublish based web applications, using [capistrano](https://github.com/capistrano/capistrano).
 It supports any number of custom environments (dev, staging, prod, etc), servers, and custom tasks for remote server automation that can be hooked into the deploy process.
 
@@ -39,6 +39,12 @@ The process is the following:
     ```bash
     $ sudo gem install capistrano capistrano-symfony capistrano-withrsync
     ```
+
+* Place the files in your project's root. An `install` script is provided to make this easier:
+    ```bash
+    curl -s https://raw.githubusercontent.com/cleverti/capi-deploy/master/install | sh
+    ```
+
 
 ### Configuration
 * Create/edit the <environment> file(s) under `deploy/stages` and define settings as needed: application, domain, server(s), git url and branch, etc.
