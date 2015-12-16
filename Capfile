@@ -22,4 +22,4 @@ Dir.glob('deploy/lib/*.cap').each { |r| import r }
 Dir.glob('deploy/tasks/*.cap').each { |r| import r }
 
 # invoke default stage environment
-invoke :dev
+invoke :default
